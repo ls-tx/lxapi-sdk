@@ -53,6 +53,9 @@ Trait DocTrait
             $document['data']['relationships']['team']['data']['type'] = 'team';
             $document['data']['relationships']['team']['data']['id'] = $options['team_id'];
         }
+        if (isset($options['tags'])) {
+            $document['data']['attributes']['tags'] = $options['tags'];
+        }
         if (isset($options['directory_id'])) {
             $document['data']['relationships']['directory']['data']['type'] = 'directory';
             $document['data']['relationships']['directory']['data']['id'] = $options['directory_id'];
@@ -102,6 +105,9 @@ Trait DocTrait
         }
         if (isset($options['only_team'])) {
             $document['data']['attributes']['only_team'] = $options['only_team'];
+        }
+        if (isset($options['tags'])) {
+            $document['data']['attributes']['tags'] = $options['tags'];
         }
         if (isset($options['privilege_type'])) {
             $document['data']['attributes']['privilege_type'] = $options['privilege_type'];
@@ -194,6 +200,9 @@ Trait DocTrait
         if (isset($options['enable_copy_limit'])) {
             $document['data']['attributes']['enable_copy_limit'] = $options['enable_copy_limit'];
         }
+        if (isset($options['tags'])) {
+            $document['data']['attributes']['tags'] = $options['tags'];
+        }
         if (isset($options['signature'])) {
             $document['data']['attributes']['signature'] = $options['signature'];
         }
@@ -251,6 +260,9 @@ Trait DocTrait
         }
         if (isset($options['only_team'])) {
             $document['data']['attributes']['only_team'] = $options['only_team'];
+        }
+        if (isset($options['tags'])) {
+            $document['data']['attributes']['tags'] = $options['tags'];
         }
         if (isset($options['signature'])) {
             $document['data']['attributes']['signature'] = $options['signature'];

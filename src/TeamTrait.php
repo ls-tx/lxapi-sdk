@@ -24,6 +24,9 @@ Trait TeamTrait
         if (isset($options['is_secret'])) {
             $team['data']['attributes']['is_secret'] = $options['is_secret'];
         }
+        if (isset($options['application'])) {
+            $team['data']['attributes']['application'] = $options['application'];
+        }
 
         if (isset($options['orgs'])) {
             foreach ($options['orgs'] as $privilege) {
